@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+form {
+	text-align: center;
+}
+
+label {
+	display: block;
+}
+
+label span {
+	display: inline-block;
+	min-width: 100px;
+	text-align: left;
+}
+
+.error {
+	border: 1px solid red;
+}
+
+.progress {
+	border: 1px solid #ccc;
+	background-color: #ccc;
+}
+
+.success {
+	border: 1px solid green;
+}
+</style>
+<script type="text/javascript" src="./jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./index.js"></script>
+</head>
+<body>
+    <form id="myForm" action="./success.json" method="post">
+        <div id="resultContainer"></div>
+        <label><span>ФИО:</span><input name="fio" type="text"></label>
+        <label><span>Email:</span><input name="email" type="email"></label>
+        <label><span>Телефон:</span><input name="phone" type="tel"></label>
+        <button type="submit" id="submitButton">Submit</button>
+    </form>
+</body>
+</html>
